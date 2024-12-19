@@ -7,4 +7,3 @@ public record class BookDto(
     decimal Price,
     DateOnly PublishedOn
 );
-

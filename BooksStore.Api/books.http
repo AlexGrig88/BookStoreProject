@@ -1,0 +1,29 @@
+GET http://localhost:5247/books
+
+###
+GET http://localhost:5247/books/2
+
+###
+POST http://localhost:5247/books
+Content-Type: application/json
+
+{
+    "title": "Спектр",
+    "description": "Парень путешествуем по разным мирам сквозь порталы.",
+    "price": 740.00,
+    "publishedOn": "2010-02-22"
+}
+
+###
+PUT http://localhost:5247/books/3
+Content-Type: application/json
+
+{
+    "title": "Имя Розы",
+    "description": "В небольшой храм едут двое служителей церкви. Там происходят загадочные убийства, которые им предстоит раскрыть.",
+    "price": 1499.80,
+    "publishedOn": "1999-05-10"
+}
+
+###
+DELETE http://localhost:5247/books/2
